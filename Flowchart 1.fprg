@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dwi Ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-03-27 10:47:12 "/>
+        <attribute name="created" value="RHdpIEFobWFkO0RXSUFITUFELVBDOzIwMjAtMDMtMjc7IjA4OjQ4OjM1ICI7Mjc2NQ=="/>
+        <attribute name="edited" value="RHdpIEFobWFkO0RXSUFITUFELVBDOzIwMjAtMDMtMjc7IjEwOjQ3OjEyICI7ODsyODY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Jumlah Bilangan &quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="0" end="n" direction="inc" step="1">
+                <declare name="b" type="Integer" array="True" size="100"/>
+                <if expression="i &lt; n">
+                    <then>
+                        <input variable="b[i]"/>
+                        <assign variable="sum" expression="sum + b[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Hasil Penjumlahan : &quot;" newline="False"/>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
